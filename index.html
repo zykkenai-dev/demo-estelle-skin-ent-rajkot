@@ -1,0 +1,317 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Estelle Skin & ENT Clinic · Mavdi, Rajkot</title>
+<meta name="description" content="Estelle Skin & ENT Clinic, 310 Angel Bizz, Khodal Chowk, 80 Feet Road, Mavdi, Rajkot. Dermatology with Dr. Darshit Ambalia (MD Skin) and ENT care with Dr. Dhvani Shah Ambalia.">
+<link rel="preconnect" href="https://fonts.googleapis.com"><link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Urbanist:wght@300;400;500;600;700&family=Be+Vietnam+Pro:wght@300;400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{--ivory:#FAF6F1;--paper:#FFFDFA;--ink:#1C1B1A;--ink2:#4A4541;--stone:#8A817A;--coral:#DD6B4E;--coral-d:#C2553A;--blush:#F2E1D8;--line:#E6DDD4;--r:22px}
+*{box-sizing:border-box;margin:0;padding:0}
+html{scroll-behavior:smooth}
+body{font-family:'Be Vietnam Pro',system-ui,sans-serif;background:var(--ivory);color:var(--ink);font-size:16px;line-height:1.65;-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit;text-decoration:none}
+.wrap{width:min(1240px,100% - 64px);margin-inline:auto}
+h1,h2,h3,.disp{font-family:'Urbanist',sans-serif;font-weight:500;letter-spacing:-.025em;line-height:1.02}
+.eyebrow{font-size:12.5px;letter-spacing:.16em;text-transform:uppercase;color:var(--stone);font-weight:500;display:flex;align-items:center;gap:10px}
+.star{width:12px;height:12px;flex:none;color:var(--coral)}
+/* nav */
+.nav{position:sticky;top:0;z-index:50;background:rgba(250,246,241,.86);backdrop-filter:saturate(1.4) blur(12px);border-bottom:1px solid transparent;transition:border-color .3s}
+.nav.s{border-color:var(--line)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:72px}
+.logo{display:flex;align-items:center;gap:10px;font-family:'Urbanist';font-weight:600;font-size:22px;letter-spacing:-.02em}
+.logo svg{width:20px;height:20px;color:var(--coral)}
+.logo small{font-family:'Be Vietnam Pro';font-weight:400;font-size:12px;color:var(--stone);letter-spacing:.04em;margin-left:2px}
+.links{display:flex;gap:34px;font-size:14.5px;color:var(--ink2)}
+.links a{position:relative}
+.links a:after{content:"";position:absolute;left:0;right:100%;bottom:-4px;height:1px;background:var(--ink);transition:right .3s}
+.links a:hover:after{right:0}
+.btn{display:inline-flex;align-items:center;gap:10px;height:46px;padding:0 22px;border-radius:999px;font-size:14.5px;font-weight:500;transition:background .25s,color .25s,transform .25s,box-shadow .25s;white-space:nowrap}
+.btn-ink{background:var(--ink);color:#fff}
+.btn-ink:hover{background:var(--coral-d)}
+.btn-line{border:1px solid var(--ink);}
+.btn-line:hover{background:var(--ink);color:#fff}
+.btn-coral{background:var(--coral);color:#fff}
+.btn-coral:hover{background:var(--coral-d);transform:translateY(-1px)}
+.btn svg{width:16px;height:16px}
+/* hero */
+.hero{padding:44px 0 56px}
+.hero-top{display:grid;grid-template-columns:1fr 340px;gap:48px;align-items:end}
+.hero h1{font-size:clamp(46px,6.6vw,96px);margin-top:18px}
+.hero h1 em{font-style:normal;color:var(--coral)}
+.hero-side p{color:var(--ink2);font-size:16px;margin-bottom:22px}
+.hero-side .row{display:flex;gap:10px;flex-wrap:wrap}
+.duo{display:grid;grid-template-columns:1.15fr 1fr;gap:18px;margin-top:40px}
+.panel{position:relative;border-radius:var(--r);overflow:hidden;height:clamp(300px,40vh,420px);background:var(--blush)}
+.panel img{width:100%;height:100%;object-fit:cover;transition:transform 1.2s cubic-bezier(.2,.7,.2,1)}
+.panel:hover img{transform:scale(1.035)}
+.tag{position:absolute;left:18px;bottom:18px;right:18px;display:flex;justify-content:space-between;align-items:flex-end;gap:12px}
+.tag .chip{background:rgba(255,253,250,.94);border-radius:16px;padding:12px 16px;line-height:1.35}
+.tag .chip b{display:block;font-family:'Urbanist';font-weight:600;font-size:18px;letter-spacing:-.01em}
+.tag .chip span{font-size:13px;color:var(--ink2)}
+.tag .n{font-family:'Urbanist';font-size:13px;color:#fff;background:rgba(28,27,26,.55);padding:6px 12px;border-radius:999px}
+.proof{display:flex;gap:36px;align-items:center;margin-top:26px;color:var(--ink2);font-size:14px;flex-wrap:wrap}
+.proof b{font-family:'Urbanist';font-weight:600;color:var(--ink);font-size:20px;margin-right:6px}
+.proof i{width:4px;height:4px;border-radius:50%;background:var(--stone);display:inline-block}
+/* concerns */
+section{padding:110px 0}
+.sec-h{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:end;margin-bottom:48px}
+.sec-h h2{font-size:clamp(36px,4.4vw,60px)}
+.sec-h p{color:var(--ink2);max-width:460px;justify-self:end}
+.tabs{display:inline-flex;background:var(--paper);border:1px solid var(--line);border-radius:999px;padding:5px;gap:4px;margin-bottom:34px}
+.tabs button{font:inherit;font-size:14.5px;font-weight:500;border:0;background:none;padding:11px 22px;border-radius:999px;cursor:pointer;color:var(--ink2);transition:background .25s,color .25s}
+.tabs button[aria-selected=true]{background:var(--ink);color:#fff}
+.tabpane{display:none;grid-template-columns:1fr 1fr;gap:18px}
+.tabpane.on{display:grid;animation:fade .5s ease}
+@keyframes fade{from{opacity:0;transform:translateY(8px)}to{opacity:1;transform:none}}
+.list{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:12px 30px}
+.li{display:grid;grid-template-columns:44px 1fr auto;align-items:center;padding:19px 0;border-bottom:1px solid var(--line);gap:8px}
+.li:last-child{border-bottom:0}
+.li .k{font-family:'Urbanist';color:var(--stone);font-size:14px}
+.li h3{font-size:21px;font-weight:500;letter-spacing:-.01em}
+.li p{font-size:13.5px;color:var(--stone);grid-column:2;margin-top:-2px}
+.li svg{width:18px;height:18px;color:var(--coral);grid-row:1/3;grid-column:3;transition:transform .3s}
+.li:hover svg{transform:translateX(4px)}
+.pimg{border-radius:var(--r);overflow:hidden;min-height:440px;position:relative}
+.pimg img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+/* principles */
+.princ{background:var(--ink);color:#F4EDE6;border-radius:32px;padding:88px 0;margin:0 24px}
+.princ .sec-h p{color:#B9AFA6}
+.p3{display:grid;grid-template-columns:repeat(3,1fr);gap:0;border-top:1px solid #3A3633}
+.p3 div{padding:34px 34px 8px 0;border-right:1px solid #3A3633}
+.p3 div+div{padding-left:34px}
+.p3 div:last-child{border-right:0}
+.p3 .num{font-family:'Urbanist';font-size:56px;font-weight:300;color:var(--coral);line-height:1}
+.p3 h3{font-size:24px;margin:22px 0 10px;font-weight:500}
+.p3 p{color:#B9AFA6;font-size:15px}
+/* quote band */
+.qband{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
+.qband .ph{border-radius:200px 200px var(--r) var(--r);overflow:hidden;aspect-ratio:4/5;max-height:620px}
+.qband .ph img{width:100%;height:100%;object-fit:cover}
+blockquote{font-family:'Urbanist';font-size:clamp(30px,3.4vw,48px);line-height:1.15;letter-spacing:-.02em;font-weight:400}
+blockquote .m{color:var(--coral)}
+.cite{margin-top:26px;color:var(--stone);font-size:14px}
+/* doctors */
+.docs{display:grid;grid-template-columns:1fr 1fr;gap:18px}
+.doc{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:36px;display:grid;grid-template-columns:96px 1fr;gap:26px;transition:transform .35s,box-shadow .35s}
+.doc:hover{transform:translateY(-3px);box-shadow:0 24px 50px -30px rgba(28,27,26,.35)}
+.mono{width:96px;height:96px;border-radius:50%;background:var(--blush);display:grid;place-items:center;font-family:'Urbanist';font-size:32px;font-weight:600;color:var(--coral-d)}
+.doc .role{font-size:12.5px;letter-spacing:.14em;text-transform:uppercase;color:var(--coral-d);font-weight:500}
+.doc h3{font-size:30px;margin:8px 0 12px}
+.doc p{color:var(--ink2);font-size:15px}
+.doc ul{list-style:none;margin-top:18px;display:flex;flex-wrap:wrap;gap:8px}
+.doc li{font-size:13px;border:1px solid var(--line);border-radius:999px;padding:6px 12px;color:var(--ink2)}
+/* reviews */
+.revs{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.rev{background:var(--paper);border:1px solid var(--line);border-radius:var(--r);padding:28px;display:flex;flex-direction:column;justify-content:space-between;gap:28px;min-height:280px}
+.rev:nth-child(2){background:var(--blush);border-color:var(--blush)}
+.rev p{font-size:15.5px;color:var(--ink)}
+.rev .who{font-size:13px;color:var(--stone);display:flex;justify-content:space-between}
+.stars{color:var(--coral);letter-spacing:2px;font-size:13px}
+.score{display:flex;align-items:baseline;gap:14px}
+.score b{font-family:'Urbanist';font-size:88px;font-weight:300;line-height:1;letter-spacing:-.04em}
+/* visit */
+.visit{display:grid;grid-template-columns:1.1fr .9fr;gap:18px}
+.vcard{background:var(--coral);color:#fff;border-radius:32px;padding:56px;display:flex;flex-direction:column;justify-content:space-between;min-height:460px}
+.vcard h2{font-size:clamp(38px,4.4vw,62px)}
+.vcard .row{display:flex;gap:10px;flex-wrap:wrap;margin-top:34px}
+.vcard .btn-w{background:#fff;color:var(--ink)}
+.vcard .btn-w:hover{background:var(--ink);color:#fff}
+.vcard .btn-o{border:1px solid rgba(255,255,255,.7);color:#fff}
+.vcard .btn-o:hover{background:rgba(255,255,255,.14)}
+.vinfo{background:var(--paper);border:1px solid var(--line);border-radius:32px;padding:44px;display:grid;gap:26px;align-content:start}
+.vinfo .k{font-size:12px;letter-spacing:.16em;text-transform:uppercase;color:var(--stone);margin-bottom:6px}
+.vinfo .v{font-size:17px}
+.vinfo a.v{border-bottom:1px solid var(--line);transition:border-color .25s}
+.vinfo a.v:hover{border-color:var(--coral)}
+footer{padding:48px 0 40px;color:var(--stone);font-size:13.5px}
+footer .wrap{display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;border-top:1px solid var(--line);padding-top:28px}
+.mbar{display:none}
+/* reveal */
+.rv{opacity:0;transform:translateY(22px);transition:opacity .8s ease,transform .8s cubic-bezier(.2,.7,.2,1)}
+.rv.in{opacity:1;transform:none}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}.rv{opacity:1;transform:none;transition:none}*{animation:none!important;transition:none!important}}
+/* responsive */
+@media (max-width:1100px){.revs{grid-template-columns:1fr 1fr}.links{gap:22px}}
+@media (max-width:900px){
+ .wrap{width:min(100% - 40px,1240px)}
+ .links{display:none}
+ .hero-top,.sec-h,.qband,.visit,.docs{grid-template-columns:1fr}
+ .sec-h p{justify-self:start}
+ .hero-top{gap:22px}
+ .tabpane.on{grid-template-columns:1fr}
+ .pimg{min-height:320px}
+ .p3{grid-template-columns:1fr}
+ .p3 div,.p3 div+div{padding:28px 0;border-right:0;border-bottom:1px solid #3A3633}
+ .p3 div:last-child{border-bottom:0}
+ .qband{gap:36px}.qband .ph{max-height:520px;max-width:460px}
+ section{padding:84px 0}
+ .princ{margin:0 12px;padding:72px 0}
+}
+@media (max-width:600px){
+ body{padding-bottom:76px}
+ .nav .btn{display:none}
+ .hero{padding:28px 0 40px}
+ .duo{grid-template-columns:1fr;gap:12px;margin-top:28px}
+ .panel{height:300px}
+ .tag .n{display:none}
+ .proof{gap:14px 22px}
+ .proof i{display:none}
+ .revs{grid-template-columns:1fr}
+ .rev{min-height:0}
+ .list{padding:6px 20px}
+ .li h3{font-size:18.5px}
+ .doc{grid-template-columns:1fr;padding:28px;gap:18px}
+ .mono{width:72px;height:72px;font-size:24px}
+ .vcard{padding:36px 28px;min-height:0}
+ .vinfo{padding:30px 26px}
+ .tabs button{padding:10px 16px;font-size:14px}
+ .mbar{display:grid;grid-template-columns:1fr 1fr;gap:8px;position:fixed;left:0;right:0;bottom:0;z-index:60;padding:10px 12px calc(10px + env(safe-area-inset-bottom));background:rgba(250,246,241,.96);backdrop-filter:blur(10px);border-top:1px solid var(--line)}
+ .mbar a{height:48px;border-radius:14px;display:flex;align-items:center;justify-content:center;gap:8px;font-weight:500;font-size:15px}
+ .mbar a:first-child{background:var(--ink);color:#fff}
+ .mbar a:last-child{border:1px solid var(--ink)}
+ .mbar svg{width:16px;height:16px}
+}
+</style>
+</head>
+<body>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+ <symbol id="st" viewBox="0 0 24 24"><path fill="currentColor" d="M12 0c.6 6.4 5.6 11.4 12 12-6.4.6-11.4 5.6-12 12-.6-6.4-5.6-11.4-12-12C6.4 11.4 11.4 6.4 12 0Z"/></symbol>
+ <symbol id="ph" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 4h4l2 5-2.5 1.5a11 11 0 0 0 5 5L15 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 6a2 2 0 0 1 2-2"/></symbol>
+ <symbol id="ar" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M5 12h14M13 6l6 6-6 6"/></symbol>
+ <symbol id="pin" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M12 21s7-6.2 7-12a7 7 0 0 0-14 0c0 5.8 7 12 7 12Z"/><circle cx="12" cy="9" r="2.5" fill="none" stroke="currentColor" stroke-width="1.8"/></symbol>
+</svg>
+
+<header class="nav" id="nav">
+ <div class="wrap">
+  <a class="logo" href="#top" aria-label="Estelle Skin & ENT Clinic"><svg><use href="#st"/></svg>Estelle<small>Skin &amp; ENT</small></a>
+  <nav class="links" aria-label="Main"><a href="#care">Care</a><a href="#approach">Approach</a><a href="#doctors">Doctors</a><a href="#reviews">Reviews</a><a href="#visit">Visit</a></nav>
+  <a class="btn btn-ink" href="tel:+918780592180"><svg><use href="#ph"/></svg>87805 92180</a>
+ </div>
+</header>
+
+<main id="top">
+<section class="hero" style="padding-top:44px">
+ <div class="wrap">
+  <div class="hero-top">
+   <div>
+    <div class="eyebrow"><svg class="star"><use href="#st"/></svg>Skin &amp; ENT clinic · Mavdi, Rajkot</div>
+    <h1>Two specialists.<br>One calm <em>clinic.</em></h1>
+   </div>
+   <div class="hero-side">
+    <p>Dermatology with Dr. Darshit Ambalia, MD (Skin), and ENT care with Dr. Dhvani Shah Ambalia, on the third floor of Angel Bizz, Khodal Chowk.</p>
+    <div class="row"><a class="btn btn-coral" href="tel:+918780592180">Book a visit<svg><use href="#ar"/></svg></a><a class="btn btn-line" href="#care">See treatments</a></div>
+   </div>
+  </div>
+  <div class="duo">
+   <a class="panel" href="#care" data-tab="skin"><img src="img/skin.jpg" alt="Dermatologist examining a patient's skin" fetchpriority="high"><div class="tag"><div class="chip"><b>Skin, hair &amp; laser</b><span>Dr. Darshit Ambalia · MD (Skin)</span></div><span class="n">01</span></div></a>
+   <a class="panel" href="#care" data-tab="ent"><img src="img/ent.jpg" alt="ENT doctor examining a patient's ear"><div class="tag"><div class="chip"><b>Ear, nose &amp; throat</b><span>Dr. Dhvani Shah Ambalia · ENT</span></div><span class="n">02</span></div></a>
+  </div>
+  <div class="proof"><span><b>4.9</b>on Google</span><i></i><span><b>168</b>patient reviews</span><i></i><span>310, Angel Bizz · 80 Feet Road</span></div>
+ </div>
+</section>
+
+<section id="care" style="padding-top:70px">
+ <div class="wrap">
+  <div class="sec-h rv"><h2>Start with what's<br>bothering you.</h2><p>Pick a side. Both doctors work from the same clinic, so a skin concern and an ENT concern never mean two separate trips across town.</p></div>
+  <div class="tabs rv" role="tablist"><button role="tab" aria-selected="true" data-t="skin">Skin, hair &amp; laser</button><button role="tab" aria-selected="false" data-t="ent">Ear, nose &amp; throat</button></div>
+  <div class="tabpane on" id="p-skin">
+   <div class="list">
+    <a class="li" href="tel:+918780592180"><span class="k">01</span><h3>Acne &amp; pimple marks</h3><p>Medical treatment first, procedures only when they help</p><svg><use href="#ar"/></svg></a>
+    <a class="li" href="tel:+918780592180"><span class="k">02</span><h3>Pigmentation &amp; melasma</h3><p>Dark spots, uneven tone, under-eye darkness</p><svg><use href="#ar"/></svg></a>
+    <a class="li" href="tel:+918780592180"><span class="k">03</span><h3>Hair fall &amp; scalp</h3><p>Pattern hair loss, patchy loss, dandruff</p><svg><use href="#ar"/></svg></a>
+    <a class="li" href="tel:+918780592180"><span class="k">04</span><h3>Eczema, psoriasis &amp; allergies</h3><p>Rashes, fungal infections, long-standing skin conditions</p><svg><use href="#ar"/></svg></a>
+    <a class="li" href="tel:+918780592180"><span class="k">05</span><h3>Laser hair reduction</h3><p>Planned in sessions, explained before you begin</p><svg><use href="#ar"/></svg></a>
+   </div>
+   <div class="pimg"><img src="img/laser.jpg" alt="Laser skin treatment in progress" loading="lazy"></div>
+  </div>
+  <div class="tabpane" id="p-ent">
+   <div class="list">
+    <a class="li" href="tel:+918780592180"><span class="k">01</span><h3>Nose &amp; sinus</h3><p>Blocked nose, sinus trouble, nasal surgery with follow-up care</p><svg><use href="#ar"/></svg></a>
+    <a class="li" href="tel:+918780592180"><span class="k">02</span><h3>Ear problems</h3><p>Ear pain, infections, wax, ringing and hearing concerns</p><svg><use href="#ar"/></svg></a>
+    <a class="li" href="tel:+918780592180"><span class="k">03</span><h3>Throat &amp; voice</h3><p>Recurring sore throat, tonsils, hoarseness</p><svg><use href="#ar"/></svg></a>
+    <a class="li" href="tel:+918780592180"><span class="k">04</span><h3>Allergies</h3><p>Sneezing, seasonal allergy and post-nasal drip</p><svg><use href="#ar"/></svg></a>
+    <a class="li" href="tel:+918780592180"><span class="k">05</span><h3>Post-operative care</h3><p>Checks and guidance after a procedure, until you're fully healed</p><svg><use href="#ar"/></svg></a>
+   </div>
+   <div class="pimg"><img src="img/tools.jpg" alt="ENT examination instruments" loading="lazy"></div>
+  </div>
+ </div>
+</section>
+
+<div class="princ" id="approach">
+ <div class="wrap">
+  <div class="sec-h rv"><h2>The Estelle way,<br>in patients' words.</h2><p>Three things come up again and again in 168 Google reviews. We built the clinic around them.</p></div>
+  <div class="p3">
+   <div class="rv"><span class="num">01</span><h3>Time to listen</h3><p>Every concern is assessed properly and explained clearly before anything is prescribed.</p></div>
+   <div class="rv"><span class="num">02</span><h3>Only what works</h3><p>No pushing of products or procedures you don't need. The plan is the simplest one that gets results.</p></div>
+   <div class="rv"><span class="num">03</span><h3>There after the visit</h3><p>Questions after your appointment? Patients mention getting guidance on call, too.</p></div>
+  </div>
+ </div>
+</div>
+
+<section>
+ <div class="wrap qband">
+  <div class="ph rv"><img src="img/hero.jpg" alt="Portrait of a woman with healthy, glowing skin" loading="lazy"></div>
+  <div class="rv">
+   <div class="eyebrow" style="margin-bottom:26px"><svg class="star"><use href="#st"/></svg>Google review · March 2025</div>
+   <blockquote><span class="m">“</span>Unlike many other doctors, they don't push unnecessary products or procedures. Highly recommend if you're looking for a genuine and knowledgeable dermatologist in town.<span class="m">”</span></blockquote>
+   <p class="cite">Patient of Dr. Darshit Ambalia</p>
+  </div>
+ </div>
+</section>
+
+<section id="doctors" style="padding-top:20px">
+ <div class="wrap">
+  <div class="sec-h rv"><h2>Meet your doctors.</h2><p>A dermatologist and an ENT surgeon under one roof, each seeing patients in their own speciality.</p></div>
+  <div class="docs">
+   <article class="doc rv"><div class="mono">DA</div><div><span class="role">Dermatology</span><h3>Dr. Darshit Ambalia</h3><p>MD (Skin). Known for taking time over each case, explaining the diagnosis plainly and keeping treatment focused on what your skin actually needs.</p><ul><li>Acne</li><li>Pigmentation</li><li>Hair loss</li><li>Laser</li></ul></div></article>
+   <article class="doc rv"><div class="mono">DS</div><div><span class="role">Ear, nose &amp; throat</span><h3>Dr. Dhvani Shah Ambalia</h3><p>ENT specialist. Patients write about smooth procedures and attentive post-operative care, especially after nose surgery.</p><ul><li>Nose &amp; sinus</li><li>Ear</li><li>Throat</li><li>Surgery</li></ul></div></article>
+  </div>
+ </div>
+</section>
+
+<section id="reviews" style="padding-top:20px">
+ <div class="wrap">
+  <div class="sec-h rv"><div class="score"><b>4.9</b><div><div class="stars">★★★★★</div><div style="color:var(--stone);font-size:14px">168 Google reviews</div></div></div><p>Short excerpts from public Google reviews, lightly trimmed for length.</p></div>
+  <div class="revs">
+   <figure class="rev rv"><p>“The doctor is very knowledgeable, polite, and always available to guide, even through calls when needed, and gives proper time to patients.”</p><figcaption class="who"><span>Skin infection</span><span>Oct 2025</span></figcaption></figure>
+   <figure class="rev rv"><p>“I was very worried and scared beforehand, but the procedure went exceptionally well. The results exceeded my expectations. Dr. Dhwani Shah's post-operative care has also been fantastic.”</p><figcaption class="who"><span>Nose surgery</span><span>Feb 2025</span></figcaption></figure>
+   <figure class="rev rv"><p>“I have been consulting with Dr. Darshit for pimples for the past one and a half months. The medicine has made a big difference.”</p><figcaption class="who"><span>Acne</span><span>Mar 2025</span></figcaption></figure>
+   <figure class="rev rv"><p>“Staff are very friendly and caring. Every time they welcomed us with warm smiles. The premises are very well maintained and neat.”</p><figcaption class="who"><span>Family visit</span><span>Oct 2025</span></figcaption></figure>
+  </div>
+ </div>
+</section>
+
+<section id="visit" style="padding-top:20px">
+ <div class="wrap visit">
+  <div class="vcard rv">
+   <div class="eyebrow" style="color:rgba(255,255,255,.8)"><svg class="star" style="color:#fff"><use href="#st"/></svg>Appointments</div>
+   <div><h2>Call ahead,<br>walk in on time.</h2><p style="margin-top:16px;opacity:.9;max-width:420px">Tell us whether it's a skin or ENT concern and we'll book you with the right doctor.</p>
+   <div class="row"><a class="btn btn-w" href="tel:+918780592180"><svg><use href="#ph"/></svg>Call 87805 92180</a><a class="btn btn-o" href="https://www.google.com/maps/search/?api=1&query=Estelle+Skin+ENT+Clinic+Angel+Bizz+Khodal+Chowk+Rajkot" target="_blank" rel="noopener"><svg><use href="#pin"/></svg>Directions</a></div></div>
+  </div>
+  <div class="vinfo rv">
+   <div><div class="k">Address</div><div class="v">310, 3rd floor, Angel Bizz, Khodal Chowk, 80 Feet Road, near Matuki Restaurant, Mavdi, Rajkot 360004</div></div>
+   <div><div class="k">Phone</div><a class="v" href="tel:+918780592180">+91 87805 92180</a></div>
+   <div><div class="k">Hours</div><div class="v">By appointment · Sundays closed</div></div>
+   <div><div class="k">Specialities</div><div class="v">Dermatology, cosmetology &amp; laser · Ear, nose &amp; throat</div></div>
+  </div>
+ </div>
+</section>
+</main>
+
+<footer><div class="wrap"><span>© Estelle Skin &amp; ENT Clinic, Rajkot</span><span>Demo website concept by Zykken · representative imagery</span></div></footer>
+<nav class="mbar" aria-label="Quick actions"><a href="tel:+918780592180"><svg><use href="#ph"/></svg>Call clinic</a><a href="https://www.google.com/maps/search/?api=1&query=Estelle+Skin+ENT+Clinic+Angel+Bizz+Khodal+Chowk+Rajkot" target="_blank" rel="noopener"><svg><use href="#pin"/></svg>Directions</a></nav>
+<script>
+const nav=document.getElementById('nav');addEventListener('scroll',()=>nav.classList.toggle('s',scrollY>10),{passive:true});
+const tabs=[...document.querySelectorAll('.tabs button')];
+function show(t){tabs.forEach(b=>b.setAttribute('aria-selected',b.dataset.t===t));document.querySelectorAll('.tabpane').forEach(p=>p.classList.toggle('on',p.id==='p-'+t))}
+tabs.forEach(b=>b.onclick=()=>show(b.dataset.t));
+document.querySelectorAll('.panel').forEach(p=>p.addEventListener('click',()=>show(p.dataset.tab)));
+const io=new IntersectionObserver(es=>es.forEach(e=>{if(e.isIntersecting){e.target.classList.add('in');io.unobserve(e.target)}}),{threshold:.12});
+document.querySelectorAll('.rv').forEach(el=>io.observe(el));
+</script>
+</body>
+</html>
